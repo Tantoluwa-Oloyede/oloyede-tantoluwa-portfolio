@@ -23,9 +23,12 @@
     
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <!-- Loading Bar -->
     <div class="loading-bar" id="loadingBar"></div>
 
+    <main id="main-content">
     <nav id="navbar">
         <div class="container">
             <div class="logo">CreativEmman</div>
@@ -103,6 +106,7 @@
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work →</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <!-- Add your resume link here -->
                     <a href="#" class="btn btn-outline placeholder-link" title="Add your resume link here">Download Resume</a>
                 </div>
             </div>
@@ -280,46 +284,45 @@
                 </h2>
 
                 <p class="section-subtitle">
-                    Backend projects demonstrating API design, authentication workflows, database modeling, and business logic implementation.
-                    Links marked "Add Link" are placeholders you can update later.
+                    A few backend projects that show how I approach real-world product problems: system design, secure workflows, clean APIs, and reliable delivery.
+                    You can replace the remaining placeholder links whenever you are ready.
                 </p>
             </div>
 
             <div class="projects-grid">
 
-                <!-- Project 1 -->
                 <div class="project-card fade-in">
-
                     <div class="project-image">📅</div>
-
                     <div class="project-content">
-
                         <div class="project-header">
                             <h3>Appointment & Booking System API</h3>
-                            <span class="project-highlight">Featured</span>
+                            <span class="project-highlight">Case Study</span>
                         </div>
 
                         <p>
-                            Booking backend API with provider availability management, service scheduling, authentication, role-based authorization, and relational data modeling. Built with Node.js, Express.js, and PostgreSQL with validation layers, transaction-safe operations, and structured error handling.
+                            I built a multi-role booking platform that allows customers to book services, providers to manage availability, and admins to oversee platform operations. The challenge was to balance secure workflows, business logic, and double-booking prevention without sacrificing usability.
                         </p>
 
+                        <ul class="project-highlights">
+                            <li><strong>Problem:</strong> Appointment systems needed reliable scheduling, role-based access, and protection against duplicate bookings.</li>
+                            <li><strong>My role:</strong> I designed the backend architecture, auth flow, booking rules, validation layers, and email-driven verification processes.</li>
+                            <li><strong>Stack:</strong> Node.js, Express 5, PostgreSQL, pg-promise, Joi, JWT, Nodemailer.</li>
+                            <li><strong>Outcome:</strong> Delivered a secure, production-style API with provider availability logic, booking lifecycle actions, and protected admin workflows.</li>
+                        </ul>
+
                         <div class="project-metrics">
-
                             <div class="metric-item">
-                                <div class="metric-value">JWT</div>
-                                <div class="metric-label">Authentication</div>
+                                <div class="metric-value">3</div>
+                                <div class="metric-label">Roles</div>
                             </div>
-
                             <div class="metric-item">
-                                <div class="metric-value">SQL</div>
-                                <div class="metric-label">Relational Design</div>
+                                <div class="metric-value">OTP</div>
+                                <div class="metric-label">Verification</div>
                             </div>
-
                             <div class="metric-item">
-                                <div class="metric-value">REST</div>
-                                <div class="metric-label">API Architecture</div>
+                                <div class="metric-value">RBAC</div>
+                                <div class="metric-label">Security</div>
                             </div>
-
                         </div>
 
                         <div class="project-tags">
@@ -332,170 +335,135 @@
                         </div>
 
                         <div class="project-links">
+                            <!-- Add your API docs or project link here -->
                             <a href="#" class="btn btn-primary placeholder-link" title="Add project documentation link">API Docs (Add Link) →</a>
+                            <!-- Add your GitHub link here -->
                             <a href="#" class="btn btn-secondary placeholder-link" title="Add source code link">View Code (Add Link)</a>
                         </div>
-
                     </div>
                 </div>
 
-                <!-- Project 2 -->
                 <div class="project-card fade-in">
-
-                    <div class="project-image">🛒</div>
-
+                    <div class="project-image">🛡️</div>
                     <div class="project-content">
-
                         <div class="project-header">
-                            <h3>E-commerce Backend API</h3>
-                            <span class="project-highlight">Featured</span>
+                            <h3>Fortini Care Guard LMS API</h3>
+                            <span class="project-highlight">Case Study</span>
                         </div>
 
                         <p>
-                            E-commerce backend API covering authentication, product management, order processing, carts, inventory workflows, and relational database operations. Designed REST endpoints with validation, query optimization, and transactional operations for core commerce flows.
+                            I helped shape a backend for a cyber-awareness learning platform for care-sector workers. The goal was to support onboarding, secure admin operations, modular content delivery, quiz flows, and media management in a structured API.
                         </p>
 
+                        <ul class="project-highlights">
+                            <li><strong>Problem:</strong> The platform needed a reliable LMS backend with role-based access, content publishing, quizzes, and file handling.</li>
+                            <li><strong>My role:</strong> I contributed to the backend structure for authentication, modules, quizzes, resources, certificates, dashboards, and profile management.</li>
+                            <li><strong>Stack:</strong> Node.js, Express, PostgreSQL, JWT, Joi, Cloudinary, multer, Nodemailer.</li>
+                            <li><strong>Outcome:</strong> Built a modular API foundation that supports learning delivery, assessment, and secure admin workflows.</li>
+                        </ul>
+
                         <div class="project-metrics">
-
                             <div class="metric-item">
-                                <div class="metric-value">100+</div>
-                                <div class="metric-label">Products Managed</div>
+                                <div class="metric-value">10+</div>
+                                <div class="metric-label">Modules</div>
                             </div>
-
                             <div class="metric-item">
-                                <div class="metric-value">RBAC</div>
-                                <div class="metric-label">Authorization</div>
+                                <div class="metric-value">Cloud</div>
+                                <div class="metric-label">Media</div>
                             </div>
-
                             <div class="metric-item">
-                                <div class="metric-value">REST</div>
-                                <div class="metric-label">API Design</div>
+                                <div class="metric-value">JWT</div>
+                                <div class="metric-label">Auth</div>
                             </div>
-
                         </div>
 
                         <div class="project-tags">
                             <span class="tag">Node.js</span>
-                            <span class="tag">Express.js</span>
+                            <span class="tag">Express</span>
                             <span class="tag">PostgreSQL</span>
-                            <span class="tag">Authentication</span>
-                            <span class="tag">E-commerce</span>
+                            <span class="tag">LMS</span>
+                            <span class="tag">Cloudinary</span>
+                            <span class="tag">Joi</span>
                         </div>
 
                         <div class="project-links">
-                            <a href="#" class="btn btn-primary placeholder-link" title="Add project documentation link">API Docs (Add Link) →</a>
+                            <!-- Add your API docs or project link here -->
+                            <a href="#" class="btn btn-primary placeholder-link" title="Add project documentation link">Project Docs (Add Link) →</a>
+                            <!-- Add your GitHub link here -->
                             <a href="#" class="btn btn-secondary placeholder-link" title="Add source code link">View Code (Add Link)</a>
                         </div>
-
                     </div>
                 </div>
 
-
-                 <!-- Project 3 -->
                 <div class="project-card fade-in">
-
                     <div class="project-image">🧮</div>
-
                     <div class="project-content">
-
-                        <h3>Financial Calculation & Validation Engine</h3>
-
+                        <h3>Project 3 Template</h3>
                         <p>
-                            Calculation and validation engine handling financial-style computations, percentage operations, and structured error handling. Built with clear validation rules, edge-case coverage, and maintainable business logic organization.
+                            Replace this card with your next project case study. Mention the problem, your role, the stack you used, and the outcome you delivered.
                         </p>
 
                         <div class="project-metrics">
-
                             <div class="metric-item">
-                                <div class="metric-value">20+</div>
-                                <div class="metric-label">Validation Rules</div>
+                                <div class="metric-value">TBD</div>
+                                <div class="metric-label">Outcome</div>
                             </div>
-
                             <div class="metric-item">
-                                <div class="metric-value">100%</div>
-                                <div class="metric-label">Input Validation</div>
+                                <div class="metric-value">TBD</div>
+                                <div class="metric-label">Stack</div>
                             </div>
-
                             <div class="metric-item">
-                                <div class="metric-value">Safe</div>
-                                <div class="metric-label">Error Handling</div>
+                                <div class="metric-value">TBD</div>
+                                <div class="metric-label">Role</div>
                             </div>
-
                         </div>
 
                         <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Validation</span>
-                            <span class="tag">Business Logic</span>
-                            <span class="tag">Error Handling</span>
-                            <span class="tag">Algorithms</span>
+                            <span class="tag">Add Stack</span>
+                            <span class="tag">Add Stack</span>
+                            <span class="tag">Add Stack</span>
                         </div>
 
                         <div class="project-links">
-                            <a href="https://tantoluwa-oloyede.github.io/Calculator-App/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                                Live Demo →
-                            </a>
-
-                            <a href="https://github.com/Tantoluwa-Oloyede/Calculator-App" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                                View Code
-                            </a>
+                            <a href="#" class="btn btn-primary placeholder-link" title="Add live demo link">Live Demo (Add Link) →</a>
+                            <a href="#" class="btn btn-secondary placeholder-link" title="Add GitHub link">View Code (Add Link)</a>
                         </div>
-
                     </div>
                 </div>
 
-                <!-- Project 4 -->
                 <div class="project-card fade-in">
-
                     <div class="project-image">📝</div>
-
                     <div class="project-content">
-
-                        <h3>Notes Management Backend System</h3>
-
+                        <h3>Project 4 Template</h3>
                         <p>
-                            Notes management system with structured data persistence, search, category organization, recovery workflow logic, and CRUD operations. Emphasizes validation, predictable state handling, and maintainable architecture.
+                            Keep this as a flexible template for another strong project. Swap in your own problem statement, responsibilities, tools, and measurable impact.
                         </p>
 
                         <div class="project-metrics">
-
                             <div class="metric-item">
-                                <div class="metric-value">100+</div>
-                                <div class="metric-label">Records Managed</div>
+                                <div class="metric-value">TBD</div>
+                                <div class="metric-label">Impact</div>
                             </div>
-
                             <div class="metric-item">
-                                <div class="metric-value">CRUD</div>
-                                <div class="metric-label">Operations</div>
+                                <div class="metric-value">TBD</div>
+                                <div class="metric-label">Tools</div>
                             </div>
-
                             <div class="metric-item">
-                                <div class="metric-value">30d</div>
-                                <div class="metric-label">Recovery Logic</div>
+                                <div class="metric-value">TBD</div>
+                                <div class="metric-label">Role</div>
                             </div>
-
                         </div>
 
                         <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">CRUD Logic</span>
-                            <span class="tag">Data Management</span>
-                            <span class="tag">State Handling</span>
-                            <span class="tag">Search System</span>
+                            <span class="tag">Add Stack</span>
+                            <span class="tag">Add Stack</span>
+                            <span class="tag">Add Stack</span>
                         </div>
 
                         <div class="project-links">
-
-                            <a href="https://tantoluwa-oloyede.github.io/Dev-Note-Squad/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                                Live Demo →
-                            </a>
-
-                            <a href="https://github.com/Tantoluwa-Oloyede/Dev-Note-Squad" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                                View Code
-                            </a>
-
+                            <a href="#" class="btn btn-primary placeholder-link" title="Add live demo link">Live Demo (Add Link) →</a>
+                            <a href="#" class="btn btn-secondary placeholder-link" title="Add GitHub link">View Code (Add Link)</a>
                         </div>
-
                     </div>
                 </div>
 
@@ -510,145 +478,169 @@
             <div class="section-header">
 
                 <h2 class="section-title">
-                    Let's Build <span class="section-title-accent">Scalable Systems</span>
+                    Contact <span class="section-title-accent">Me</span>
                 </h2>
 
                 <p class="section-subtitle">
-                    Looking for a backend engineer to design APIs, authentication systems, databases, or production-ready backend infrastructure?
+                    Have a backend project in mind? Send a message or reach out directly — I typically respond within 24 hours.
                 </p>
 
             </div>
 
             <div class="contact-content">
 
-                <div class="contact-info">
+                <aside class="quick-contact fade-in">
 
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-
-                        <div>
-                            <h4>Email</h4>
-                            <p>tantoluwaoloyede4@gmail.com</p>
-                        </div>
+                    <div class="quick-contact-header">
+                        <h3>Quick Contact</h3>
+                        <p>Prefer a faster reply? Message me directly.</p>
                     </div>
 
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
+                    <div class="contact-info">
 
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+234 906 282 6812</p>
+                        <a href="mailto:tantoluwaoloyede4@gmail.com" class="contact-item contact-link">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>tantoluwaoloyede4@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="tel:+2349062826812" class="contact-item contact-link">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+234 906 282 6812</p>
+                            </div>
+                        </a>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-location-dot" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Ibadan, Nigeria</p>
+                            </div>
                         </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-briefcase" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h4>Availability</h4>
+                                <p>Open to backend engineering, API development, and freelance opportunities</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h4>Response Time</h4>
+                                <p>Usually responds within 24 hours</p>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
+                    <a
+                        href="https://wa.me/2349062826812?text=Hi%20Tantoluwa%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+                        class="btn btn-whatsapp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        Chat on WhatsApp
+                    </a>
 
-                        <div>
-                            <h4>Location</h4>
-                            <p>Ibadan, Nigeria</p>
-                        </div>
+                </aside>
+
+                <form class="contact-form fade-in" id="contactForm" novalidate>
+
+                    <div class="form-header">
+                        <h3>Get In Touch</h3>
+                        <p>Fill out the form below and I'll get back to you via email.</p>
                     </div>
 
-                    <div class="contact-item">
-                        <div class="contact-icon">💼</div>
-
-                        <div>
-                            <h4>Availability</h4>
-                            <p>Open to backend engineering, API development, and freelance opportunities</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">⏱️</div>
-
-                        <div>
-                            <h4>Response Time</h4>
-                            <p>Usually responds within 24 hours</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                    <!-- Replace YOUR_WEB3FORMS_ACCESS_KEY with your key from https://web3forms.com -->
+                    <input type="hidden" name="access_key" id="web3formsKey" value="3a4dc09d-694e-45bb-a424-5a25875e5f35">
+                    <input type="hidden" name="subject" id="formSubject" value="New Portfolio Contact">
+                    <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off">
 
                     <div class="form-group">
-                        <label for="name">Your Name</label>
+                        <label for="name">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                            Your Name
+                        </label>
 
-                        <input 
-                            type="text" 
-                            id="name" 
-                            name="name" 
-                            required 
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            autocomplete="name"
                             placeholder="John Doe"
                         >
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Your Email</label>
+                        <label for="email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            Your Email
+                        </label>
 
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="email" 
-                            required 
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            autocomplete="email"
                             placeholder="john@example.com"
                         >
                     </div>
-                    
-                    <div class="form-group">
 
-                        <label class="form-label" for="subject">
+                    <div class="form-group">
+                        <label for="projectType">
+                            <i class="fas fa-layer-group" aria-hidden="true"></i>
                             Project Type
                         </label>
 
-                        <select id="subject" name="subject" class="form-input" required>
-
-                            <option value="">
-                                Select a project type
-                            </option>
-
-                            <option value="api">
-                                REST API Development
-                            </option>
-
-                            <option value="backend">
-                                Backend System Architecture
-                            </option>
-
-                            <option value="database">
-                                Database Design
-                            </option>
-
-                            <option value="auth">
-                                Authentication System
-                            </option>
-
-                            <option value="other">
-                                Other
-                            </option>
-
+                        <select id="projectType" name="project_type" required>
+                            <option value="">Select a project type</option>
+                            <option value="REST API Development">REST API Development</option>
+                            <option value="Backend System Architecture">Backend System Architecture</option>
+                            <option value="Database Design">Database Design</option>
+                            <option value="Authentication System">Authentication System</option>
+                            <option value="Other">Other</option>
                         </select>
-
                     </div>
 
                     <div class="form-group">
-
                         <label for="message">
-                            Tell me more about your backend requirements
+                            <i class="fas fa-message" aria-hidden="true"></i>
+                            Your Message
                         </label>
 
-                        <textarea 
-                            id="message" 
-                            name="message" 
-                            required 
+                        <textarea
+                            id="message"
+                            name="message"
+                            required
                             placeholder="Describe your system requirements, API needs, database structure, or backend challenges..."
                         ></textarea>
-
                     </div>
 
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">
-                        Send Message →
+                    <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+
+                    <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        Send Message
                     </button>
 
                 </form>
@@ -656,6 +648,8 @@
             </div>
         </div>
     </section>
+
+    </main>
 
     <footer>
 
