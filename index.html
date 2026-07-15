@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oloyede Tantoluwa Emmanuel - Backend Engineer specializing in scalable APIs, authentication systems, PostgreSQL architecture, booking systems, and production-grade backend infrastructure.">
+    <meta name="keywords" content="Backend Engineer, Node.js, Express.js, PostgreSQL, REST API, Authentication, System Design, Backend Developer Portfolio">
+    <meta name="author" content="Oloyede Tantoluwa Emmanuel">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Oloyede Tantoluwa - Backend Engineer Portfolio">
+    <meta property="og:description" content="Backend engineer building scalable APIs, authentication systems, and production-grade backend architectures">
+    
+    <title>Oloyede Tantoluwa Emmanuel | Backend Engineer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css" />
+    
+</head>
+<body>
+    <!-- Loading Bar -->
+    <div class="loading-bar" id="loadingBar"></div>
+
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">CreativEmman</div>
+            <button
+                class="theme-toggle"
+                id="themeToggle"
+                type="button"
+                aria-label="Switch to light theme"
+                title="Toggle dark/light theme"
+            >
+                <i class="fas fa-sun"></i>
+            </button>
+            <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                <li><a href="#contact" class="nav-cta" onclick="closeMenu()">Hire Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span class="status-dot"></span>
+                    Available for Backend Engineering Roles (freelance and full-time)
+                </div>
+
+                <h1>
+                    Hi, I'm 
+                    <span style="background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+                        Oloyede Tantoluwa Emmanuel
+                    </span>
+                </h1>
+
+                <div class="subtitle">
+                    Backend Engineer focused on APIs, authentication, and reliable backend systems
+                </div>
+
+                <p>
+                    I build secure and maintainable backend services with Node.js, Express.js, PostgreSQL, and Redis.
+                    I focus on practical backend delivery: clean API design, authentication workflows, data integrity, and predictable system behavior in production.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label">Backend Projects</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-number">REST</div>
+                        <div class="stat-label">API Architecture</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-number">JWT</div>
+                        <div class="stat-label">Authentication Systems</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-number">SQL</div>
+                        <div class="stat-label">Database Design</div>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work →</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#" class="btn btn-outline placeholder-link" title="Add your resume link here">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Why Choose <span class="section-title-accent">Me</span>
+                </h2>
+
+                <p class="section-subtitle">
+                    Backend engineer focused on shipping secure APIs and reliable backend services with clean architecture.
+                </p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+
+                    <p>
+                        I'm a <strong>backend engineer</strong> from Nigeria building maintainable server-side applications.
+                        I work on APIs, authentication flows, scheduling logic, booking workflows, and relational database design for real-world use cases.
+                    </p>
+
+                    <p>
+                        My development approach prioritizes <strong>clean architecture, data integrity, security, and maintainability</strong>.
+                        I pay close attention to validation, transactional consistency, error handling, and API clarity.
+                    </p>
+
+                    <p>
+                        Using <strong>Node.js, Express.js, PostgreSQL, Redis, and backend system design</strong>, I implement business logic such as slot generation, availability management, booking conflict prevention, and secure authentication workflows.
+                    </p>
+
+                    <div class="value-props">
+
+                        <div class="value-item">
+                            <div class="value-icon">⚡</div>
+                            <div class="value-text">
+                                Built API endpoints with indexing and query improvements to reduce response time bottlenecks
+                            </div>
+                        </div>
+
+                        <div class="value-item">
+                            <div class="value-icon">🔒</div>
+                            <div class="value-text">
+                                Implemented authentication and authorization with JWT, hashing, and role-based access control
+                            </div>
+                        </div>
+
+                        <div class="value-item">
+                            <div class="value-icon">🗄️</div>
+                            <div class="value-text">
+                                Designed PostgreSQL schemas with constraints, indexing strategies, and transaction-safe workflows
+                            </div>
+                        </div>
+
+                        <div class="value-item">
+                            <div class="value-icon">📡</div>
+                            <div class="value-text">
+                                Developed REST APIs with validation, pagination, filtering, and structured error responses
+                            </div>
+                        </div>
+
+                        <div class="value-item">
+                            <div class="value-icon">🧠</div>
+                            <div class="value-text">
+                                Delivered scheduling and booking logic with conflict prevention and state consistency checks
+                            </div>
+                        </div>
+
+                        <div class="value-item">
+                            <div class="value-icon">🧪</div>
+                            <div class="value-text">
+                                Improved reliability with debugging workflows, edge-case testing, and clearer failure handling
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="photo-1531297484001-80022131f5a1.jpeg" alt="Backend Developer Workspace" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title">
+                    My <span class="section-title-accent">Skills</span>
+                </h2>
+
+                <p class="section-subtitle">
+                    Backend technologies, database systems, and engineering practices I use to build scalable applications
+                </p>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">⚙️</div>
+
+                    <h3>Node.js & Express.js</h3>
+
+                    <p>
+                        Building scalable REST APIs, middleware systems, authentication flows, validation pipelines, and modular backend architectures using Node.js and Express.js.
+                    </p>
+                </div>
+
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🗄️</div>
+
+                    <h3>PostgreSQL & Database Design</h3>
+
+                    <p>
+                        Relational database modeling, normalization, indexing, joins, constraints, query optimization, exclusion constraints, and scalable schema design.
+                    </p>
+                </div>
+
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🔒</div>
+
+                    <h3>Authentication & Security</h3>
+
+                    <p>
+                        JWT authentication, password hashing, OTP verification systems, secure session handling, authorization layers, and OWASP-focused backend security practices.
+                    </p>
+                </div>
+
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">📡</div>
+
+                    <h3>REST API Architecture</h3>
+
+                    <p>
+                        Designing production-grade APIs with proper status codes, validation layers, pagination, filtering, rate limiting, and scalable endpoint organization.
+                    </p>
+                </div>
+
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🧠</div>
+
+                    <h3>Backend System Design</h3>
+
+                    <p>
+                        Designing scheduling systems, booking engines, availability management systems, concurrency-safe workflows, and complex backend business logic.
+                    </p>
+                </div>
+
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🧪</div>
+
+                    <h3>Testing & Debugging</h3>
+
+                    <p>
+                        API testing with Postman, backend debugging, validation testing, edge-case analysis, error tracing, and production-focused backend reliability strategies.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title">
+                    Featured <span class="section-title-accent">Projects</span>
+                </h2>
+
+                <p class="section-subtitle">
+                    Backend projects demonstrating API design, authentication workflows, database modeling, and business logic implementation.
+                    Links marked "Add Link" are placeholders you can update later.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card fade-in">
+
+                    <div class="project-image">📅</div>
+
+                    <div class="project-content">
+
+                        <div class="project-header">
+                            <h3>Appointment & Booking System API</h3>
+                            <span class="project-highlight">Featured</span>
+                        </div>
+
+                        <p>
+                            Booking backend API with provider availability management, service scheduling, authentication, role-based authorization, and relational data modeling. Built with Node.js, Express.js, and PostgreSQL with validation layers, transaction-safe operations, and structured error handling.
+                        </p>
+
+                        <div class="project-metrics">
+
+                            <div class="metric-item">
+                                <div class="metric-value">JWT</div>
+                                <div class="metric-label">Authentication</div>
+                            </div>
+
+                            <div class="metric-item">
+                                <div class="metric-value">SQL</div>
+                                <div class="metric-label">Relational Design</div>
+                            </div>
+
+                            <div class="metric-item">
+                                <div class="metric-value">REST</div>
+                                <div class="metric-label">API Architecture</div>
+                            </div>
+
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express.js</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">JWT Auth</span>
+                            <span class="tag">Booking Logic</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary placeholder-link" title="Add project documentation link">API Docs (Add Link) →</a>
+                            <a href="#" class="btn btn-secondary placeholder-link" title="Add source code link">View Code (Add Link)</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card fade-in">
+
+                    <div class="project-image">🛒</div>
+
+                    <div class="project-content">
+
+                        <div class="project-header">
+                            <h3>E-commerce Backend API</h3>
+                            <span class="project-highlight">Featured</span>
+                        </div>
+
+                        <p>
+                            E-commerce backend API covering authentication, product management, order processing, carts, inventory workflows, and relational database operations. Designed REST endpoints with validation, query optimization, and transactional operations for core commerce flows.
+                        </p>
+
+                        <div class="project-metrics">
+
+                            <div class="metric-item">
+                                <div class="metric-value">100+</div>
+                                <div class="metric-label">Products Managed</div>
+                            </div>
+
+                            <div class="metric-item">
+                                <div class="metric-value">RBAC</div>
+                                <div class="metric-label">Authorization</div>
+                            </div>
+
+                            <div class="metric-item">
+                                <div class="metric-value">REST</div>
+                                <div class="metric-label">API Design</div>
+                            </div>
+
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express.js</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Authentication</span>
+                            <span class="tag">E-commerce</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary placeholder-link" title="Add project documentation link">API Docs (Add Link) →</a>
+                            <a href="#" class="btn btn-secondary placeholder-link" title="Add source code link">View Code (Add Link)</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                 <!-- Project 3 -->
+                <div class="project-card fade-in">
+
+                    <div class="project-image">🧮</div>
+
+                    <div class="project-content">
+
+                        <h3>Financial Calculation & Validation Engine</h3>
+
+                        <p>
+                            Calculation and validation engine handling financial-style computations, percentage operations, and structured error handling. Built with clear validation rules, edge-case coverage, and maintainable business logic organization.
+                        </p>
+
+                        <div class="project-metrics">
+
+                            <div class="metric-item">
+                                <div class="metric-value">20+</div>
+                                <div class="metric-label">Validation Rules</div>
+                            </div>
+
+                            <div class="metric-item">
+                                <div class="metric-value">100%</div>
+                                <div class="metric-label">Input Validation</div>
+                            </div>
+
+                            <div class="metric-item">
+                                <div class="metric-value">Safe</div>
+                                <div class="metric-label">Error Handling</div>
+                            </div>
+
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Validation</span>
+                            <span class="tag">Business Logic</span>
+                            <span class="tag">Error Handling</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://tantoluwa-oloyede.github.io/Calculator-App/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                                Live Demo →
+                            </a>
+
+                            <a href="https://github.com/Tantoluwa-Oloyede/Calculator-App" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                                View Code
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card fade-in">
+
+                    <div class="project-image">📝</div>
+
+                    <div class="project-content">
+
+                        <h3>Notes Management Backend System</h3>
+
+                        <p>
+                            Notes management system with structured data persistence, search, category organization, recovery workflow logic, and CRUD operations. Emphasizes validation, predictable state handling, and maintainable architecture.
+                        </p>
+
+                        <div class="project-metrics">
+
+                            <div class="metric-item">
+                                <div class="metric-value">100+</div>
+                                <div class="metric-label">Records Managed</div>
+                            </div>
+
+                            <div class="metric-item">
+                                <div class="metric-value">CRUD</div>
+                                <div class="metric-label">Operations</div>
+                            </div>
+
+                            <div class="metric-item">
+                                <div class="metric-value">30d</div>
+                                <div class="metric-label">Recovery Logic</div>
+                            </div>
+
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CRUD Logic</span>
+                            <span class="tag">Data Management</span>
+                            <span class="tag">State Handling</span>
+                            <span class="tag">Search System</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="https://tantoluwa-oloyede.github.io/Dev-Note-Squad/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                                Live Demo →
+                            </a>
+
+                            <a href="https://github.com/Tantoluwa-Oloyede/Dev-Note-Squad" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                                View Code
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2 class="section-title">
+                    Let's Build <span class="section-title-accent">Scalable Systems</span>
+                </h2>
+
+                <p class="section-subtitle">
+                    Looking for a backend engineer to design APIs, authentication systems, databases, or production-ready backend infrastructure?
+                </p>
+
+            </div>
+
+            <div class="contact-content">
+
+                <div class="contact-info">
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+
+                        <div>
+                            <h4>Email</h4>
+                            <p>tantoluwaoloyede4@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+234 906 282 6812</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+
+                        <div>
+                            <h4>Location</h4>
+                            <p>Ibadan, Nigeria</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+
+                        <div>
+                            <h4>Availability</h4>
+                            <p>Open to backend engineering, API development, and freelance opportunities</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">⏱️</div>
+
+                        <div>
+                            <h4>Response Time</h4>
+                            <p>Usually responds within 24 hours</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <form class="contact-form" onsubmit="handleContactSubmit(event)">
+
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            required 
+                            placeholder="John Doe"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            placeholder="john@example.com"
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+
+                        <label class="form-label" for="subject">
+                            Project Type
+                        </label>
+
+                        <select id="subject" name="subject" class="form-input" required>
+
+                            <option value="">
+                                Select a project type
+                            </option>
+
+                            <option value="api">
+                                REST API Development
+                            </option>
+
+                            <option value="backend">
+                                Backend System Architecture
+                            </option>
+
+                            <option value="database">
+                                Database Design
+                            </option>
+
+                            <option value="auth">
+                                Authentication System
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Tell me more about your backend requirements
+                        </label>
+
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            required 
+                            placeholder="Describe your system requirements, API needs, database structure, or backend challenges..."
+                        ></textarea>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        Send Message →
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="container">
+
+            <div class="social-links">
+
+                <a 
+                    href="https://github.com/Tantoluwa-Oloyede" 
+                    class="social-link" 
+                    target="_blank" 
+                    aria-label="GitHub"
+                >
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a 
+                    href="https://linkedin.com/in/tantoluwa-oloyede" 
+                    class="social-link" 
+                    target="_blank" 
+                    aria-label="LinkedIn"
+                >
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a 
+                    href="https://twitter.com/tantoluwaoloyed" 
+                    class="social-link" 
+                    target="_blank" 
+                    aria-label="Twitter"
+                >
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a 
+                    href="mailto:tantoluwaoloyede2@gmail.com" 
+                    class="social-link" 
+                    aria-label="Email"
+                >
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+            </div>
+
+            <p>
+                &copy; 2026 Oloyede Tantoluwa Emmanuel. All rights reserved.
+            </p>
+
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">
+                Backend Engineer focused on scalable systems, clean architecture, and production-ready APIs.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
