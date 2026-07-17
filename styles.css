@@ -5,25 +5,11 @@
             box-sizing: border-box;
         }
 
-        /* :root {
-            --primary: #6366f1;
-            --primary-dark: #4f46e5;
-            --secondary: #8b5cf6;
-            --accent: #ec4899;
-            --success: #10b981;
-            --warning: #f59e0b;
-            --error: #ef4444;
-            --dark: #0f172a;
-            --darker: #020617;
-            --dark-light: #1e293b;
-            --light: #f1f5f9;
-            --text: #e2e8f0;
-            --text-light: #94a3b8;
-            --text-muted: #64748b;
-            --border: rgba(255, 255, 255, 0.1);
-            --glass: rgba(30, 41, 59, 0.4);
-            --glow: rgba(99, 102, 241, 0.3);
-        } */
+        .input-error {
+        border: 1.5px solid #ff4d4d !important;
+        box-shadow: 0 0 5px rgba(255, 77, 77, 0.3) !important;
+        }
+        
         :root {
             --primary: #3b82f6;
             --primary-dark: #2563eb;

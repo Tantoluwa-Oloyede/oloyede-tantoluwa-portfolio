@@ -199,6 +199,46 @@ async function handleContactSubmit(event) {
   const statusEl = document.getElementById("formStatus");
   if (!submitBtn) return;
 
+  // --- INPUT FIELD SELECTIONS ---
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email") || form.querySelector('input[type="email"]');
+  const messageInput = form.querySelector('textarea');
+  const errorDiv = document.getElementById("error-message");
+
+  // --- VALIDATION STAGE ---
+  let hasError = false;
+
+  // Reset old states
+  if (nameInput) nameInput.classList.remove("input-error");
+  if (emailInput) emailInput.classList.remove("input-error");
+  if (messageInput) messageInput.classList.remove("input-error");
+  if (errorDiv) errorDiv.style.display = "none";
+
+  const name = nameInput ? nameInput.value.trim() : "";
+  const email = emailInput ? emailInput.value.trim() : "";
+  const projectType = document.getElementById("projectType")?.value || "Inquiry";
+  const message = messageInput ? messageInput.value.trim() : "";
+
+  if (!name) {
+    if (nameInput) nameInput.classList.add("input-error");
+    hasError = true;
+  }
+  if (!email) {
+    if (emailInput) emailInput.classList.add("input-error");
+    hasError = true;
+  }
+  if (!message) {
+    if (messageInput) messageInput.classList.add("input-error");
+    hasError = true;
+  }
+
+  // Halt form submission if validation fails
+  if (hasError) {
+    if (errorDiv) errorDiv.style.display = "block";
+    return;
+  }
+
+  // --- ACCESS KEY STAGE ---
   const accessKey = document.getElementById("web3formsKey")?.value?.trim();
   if (!accessKey || accessKey === "YOUR_WEB3FORMS_ACCESS_KEY") {
     setFormStatus(
@@ -209,11 +249,7 @@ async function handleContactSubmit(event) {
     return;
   }
 
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const projectType = document.getElementById("projectType").value;
-  const message = document.getElementById("message").value.trim();
-
+  // --- SUBMISSION STAGE ---
   const originalBtnHTML = submitBtn.innerHTML;
   submitBtn.disabled = true;
   submitBtn.innerHTML =
