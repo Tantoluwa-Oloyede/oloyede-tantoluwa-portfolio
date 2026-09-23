@@ -21,7 +21,7 @@ function updateThemeToggleUI(theme) {
     icon.className = isLight ? "fas fa-moon" : "fas fa-sun";
   }
 }
-
+ 
 function initThemeToggle() {
   updateThemeToggleUI(rootElement.getAttribute("data-theme") || "dark");
   const themeToggleBtn = document.getElementById("themeToggle");
